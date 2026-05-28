@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #151312;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#header{
+   
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    display: flex;
+}
+
+#middle{
+    display: flex;
+    background-color: #262525;
+    justify-content: space-around;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 10px;
+    width: 200px;
+    height: 35px;
+}
+
+#container{
+   
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    
+    
+    justify-content: space-between;
+}
+
+.icons{
+    cursor: pointer;
+    
+}
+
+.dropDown{
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+p{
+    border-radius: 4px;
+    width: 60px;
+    margin-top: 20px;
+    background-color: #262525;
+    color: rgba(255, 255, 255, 0.706);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropDown{
+    width:30px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position:relative;
+}
+
+.dropDown p{
+    position:absolute;
+    top:35px;
+    left:50%;
+
+    transform:translateX(-50%) translateY(-10px);
+
+    border-radius:4px;
+    width:60px;
+    padding:4px;
+
+    background-color:#262525;
+    color:rgba(255,255,255,0.706);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    opacity:0;
+   
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+.dropDown:hover p{
+    opacity:1;
+    visibility:visible;
+
+    transform:translateX(-50%) translateY(0);
+}
+
+#container > div:first-child{
+    flex:4;
+    
+}
+
+/* 70% */
+#container > div:last-child{
+    flex:6;
+    
+}
+
+.tagline{
+    font-family:'Poppins', sans-serif;
+    font-size:22px;
+    font-weight:600;
+    color:#6f6f6f;
+    text-align:center;
+    line-height:1.1;
+}
+
+/* mobile */
+@media (max-width:900px){
+
+    #container{
+        flex-direction:column;
+    }
+    
+
+    
+
+}
+
+@media (max-width:1106px){
+
+    .tagline{
+        font-size: 16px;
+    }
+
+    
+
+}
+
+
