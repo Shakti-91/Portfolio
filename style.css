@@ -361,7 +361,7 @@ p{
     justify-content: center;
     background-color: rgba(255, 68, 0, 0.788);
     font-family: 'Poppins', sans-serif;
-    width: 100%;
+    width: fit;
     height: 40px;
     border-radius: 5px;
     cursor: pointer;
