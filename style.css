@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #151312;
     height: 100vh;
@@ -114,6 +117,10 @@ p{
     
 }
 
+#card{
+    margin-left: 10px;
+}
+
 #second-card{
     height: 100%;
     
@@ -124,7 +131,7 @@ p{
 
 .tagline{
     font-family:'Poppins', sans-serif;
-    font-size:22px;
+    font-size:20px;
     font-weight:600;
     color:#6f6f6f;
     text-align:center;
@@ -136,6 +143,7 @@ p{
 
     #container{
         flex-direction:column;
+        gap: 10px;
     }
 
     #card{
@@ -403,7 +411,7 @@ p{
     border: none;
     border-radius: 5px;
     padding: 10px;
-    
+    color: #f5f5f5;
     border-style: none;
     caret-color: #f5f5f5;
 }
@@ -423,5 +431,201 @@ select{
      font-family: 'Poppins', sans-serif;
     color: #6f6f6f;
      background-color: rgb(50, 49, 49);
+}
+
+.show{
+    opacity: 0;
+    transition: 2s ease;
+}
+
+.show.true{
+    opacity: 1;
+}
+
+.connect{
+  width: 80%; display: flex; flex-direction: column; margin-top: 20px; gap:10px;  
+}
+
+
+/* =====================================================
+   RESPONSIVE ADDITIONS — only new media queries below
+   ===================================================== */
+
+/* Tablets & small laptops */
+@media (max-width: 1106px) {
+    .heading1, .heading2 {
+        font-size: 56px;
+    }
+    #bio {
+        font-size: 18px;
+    }
+    #projects-container {
+        width: 95%;
+    }
+
+    
+
+    .connect{
+        width: 95%;
+    }
+
+    .skills-container {
+        width: 90%;
+    }
+}
+
+/* Stack layout at 840px — body height must allow natural scroll */
+@media (max-width: 840px) {
+    body {
+        height: auto;
+        min-height: 100vh;
+    }
+    #container {
+        height: auto;
+        flex-direction: column;
+        padding: 0 15px 40px;
+    }
+    #card {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #second-card {
+        height: auto;
+        overflow-y: visible;
+    }
+    .heading1, .heading2 {
+        font-size: 44px;
+        letter-spacing: 2px;
+    }
+    #bio {
+        font-size: 16px;
+        width: 100% !important;
+    }
+    #projects-container {
+        width: 100%;
+    }
+    .connect{
+        width: 100%;
+    }
+    .skills-container {
+        width: 100%;
+    }
+    /* contact form section width override */
+    #second-card > div[style*="width: 80%"] {
+        width: 100% !important;
+    }
+    /* bio div width override */
+    #second-card > div[style*="width: 500px"] {
+        width: 100% !important;
+    }
+}
+
+/* Large phones */
+@media (max-width: 600px) {
+    .heading1, .heading2 {
+        font-size: 34px;
+        letter-spacing: 1px;
+    }
+    .name-mail-div {
+        flex-direction: column;
+    }
+    .Projects img {
+        max-height: 80px;
+    }
+    .project-heading1, .project-heading2 {
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+    .skills-container {
+        grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));
+        gap: 12px;
+    }
+    .skill img {
+        width: 45px;
+    }
+    #submit-div {
+        margin-left: 0;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    #container {
+        padding: 0 10px 30px;
+    }
+    .heading1, .heading2 {
+        font-size: 28px;
+    }
+    #bio {
+        font-size: 14px;
+    }
+    .skills-container {
+        grid-template-columns: repeat(auto-fit, minmax(55px, 1fr));
+        gap: 8px;
+    }
+    .skill {
+        padding: 10px;
+    }
+    .skill img {
+        width: 38px;
+    }
+}
+
+@media (min-width: 1106px) {
+    
+    #second-card{
+        padding-left: 80px;
+        justify-content: center;
+    }
+
+   .skills-container {
+        width: 80%;
+    }
+    
+
+    
+}
+
+@media (max-width:1147px) {
+    .tagline{
+        font-size: 18px;
+    }
+}
+
+@media (max-width:979px) {
+    .tagline{
+        font-size: 14px;
+    }
+
+    #name-tag{
+        font-size: 40px;
+    }
+}
+
+#middle{
+    
+    transition: all 0.3s ease;
+}
+
+/* When screen width is 840px or smaller */
+@media (max-width: 840px){
+
+    #middle{
+        position: fixed;
+        
+
+        margin-top: 0;
+        z-index: 1000;
+
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+
+        background: rgba(21, 19, 18, 0.5);
+    }
+
+    
+
+    
 }
 

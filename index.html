@@ -14,7 +14,7 @@
     <div id="header">
         <div id="middle">
         <div class="dropDown">  
-        <div class="icons">
+        <div class="icons" id="home-btn">
       <svg xmlns="http://www.w3.org/2000/svg"
      viewBox="0 0 24 24"
      fill="none"
@@ -33,7 +33,7 @@
         <div><p>Home</p></div>
         </div>
         <div class="dropDown">  
-        <div class="icons">
+        <a class="icons" href="https://drive.google.com/file/d/1T7gOKzBFo44hOQaHRHpltrPqjLnvHuis/view?usp=drive_link" target="_blank" >
             <svg xmlns="http://www.w3.org/2000/svg"
      fill="none"
      viewBox="0 0 24 24"
@@ -46,11 +46,11 @@
         stroke-linejoin="round"
         d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
 </svg>
-        </div>
+</a>
         <div><p>Resume</p></div>
         </div>
         <div class="dropDown">  
-        <div class="icons">
+        <div class="icons" id="contact-btn">
           <svg xmlns="http://www.w3.org/2000/svg"
      fill="none"
      viewBox="0 0 24 24"
@@ -67,7 +67,7 @@
         <div><p>Contact</p></div>
         </div>
         <div class="dropDown">
-        <div class="icons">
+        <div class="icons" id="projects-btn">
             <svg xmlns="http://www.w3.org/2000/svg"
      fill="none"
      viewBox="0 0 24 24"
@@ -86,8 +86,8 @@
         </div>
     </div>
     <div id="container">
-        <div style=" display: flex; justify-content: center; align-items: center;" >
-            <div id="card" style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100%; padding: 10px; border-radius: 10px; background-color: white;">
+        <div id="lala" style=" display: flex; justify-content: center; align-items: center;" >
+            <div id="card" style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100%; padding: 10px; border-radius: 10px;  background-color: white;">
               <div ><img style="height: 250px; width: auto;" src="./assets/Me-removebg-preview.png" alt="profile-image"></div>
               <div id="name-tag">
                 Shakti Singh
@@ -132,21 +132,21 @@
             </div>
         </div>
         <div id="second-card">
-           <div id="">
+           <div class="show" id="home-scroll">
             <h1 class="heading1">FULLSTACK</h1>
             <h1 class="heading2">DEVELOPER</h1>
            </div>
-           <div style="width: 500px; margin-top: 30px;">
+           <div style="width: 500px; margin-top: 30px;" class="show">
             <h1 id="bio">Final-year BTech student crafting responsive and innovative full stack applications</h1>
            </div>
-           <div style="margin-top: 30px;">
+           <div style="margin-top: 30px;" class="show" id="projects-section">
             <h1 class="heading1">RECENT</h1>
             <h1 class="heading2">PROJECTS</h1>
            </div>
-           <div id="projects-container">
+           <div id="projects-container" class="show">
             <!-- ###########project link 1 ##############!-->
             <a class="Projects" href="https://second-brain-frontend-pink.vercel.app/ " target="_blank" style="text-decoration: none;">
-              <div><img src="assets/Screenshot from 2026-05-29 13-30-34.png" alt="Second-Brain"></div>
+              <div><img src="assets/second-brain.png" alt="Second-Brain"></div>
               <div style="display: flex; align-items: center; width: 100%; justify-content: space-between;">
               <div>
                 <h1 class="project-heading1">SECOND</h1>
@@ -169,12 +169,12 @@
               </div>
             </a>
             <!-- ###########project link 2 ##############!-->
-            <a class="Projects" href="https://second-brain-frontend-pink.vercel.app/ " target="_blank" style="text-decoration: none;">
-              <div><img src="assets/Screenshot from 2026-05-29 13-30-34.png" alt="Second-Brain"></div>
+            <a class="Projects" href="https://task-manager-lyart-omega-15.vercel.app/signup " target="_blank" style="text-decoration: none;">
+              <div><img src="assets/task-manager.png" alt="Second-Brain"></div>
               <div style="display: flex; align-items: center; width: 100%; justify-content: space-between;">
               <div>
-                <h1 class="project-heading1">SECOND</h1>
-                <h1 class="project-heading2">BRAIN</h1>
+                <h1 class="project-heading1">TASK</h1>
+                <h1 class="project-heading2">MANAGER</h1>
               </div>
               <div class="arrow-icon" style="height: 80%; padding-right: 10px;">
                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -193,12 +193,12 @@
               </div>
             </a>
             <!-- ###########project link 3 ##############!-->
-            <a class="Projects" href="https://second-brain-frontend-pink.vercel.app/ " target="_blank" style="text-decoration: none;">
-              <div><img src="assets/Screenshot from 2026-05-29 13-30-34.png" alt="Second-Brain"></div>
+            <a class="Projects" href="https://shakti-91.github.io/flappybird/ " target="_blank" style="text-decoration: none;">
+              <div><img src="assets/flappy-bird.png" alt="Second-Brain"></div>
               <div style="display: flex; align-items: center; width: 100%; justify-content: space-between;">
               <div>
-                <h1 class="project-heading1">SECOND</h1>
-                <h1 class="project-heading2">BRAIN</h1>
+                <h1 class="project-heading1">FLAPPY</h1>
+                <h1 class="project-heading2">BIRD</h1>
               </div>
               <div class="arrow-icon" style="height: 80%; padding-right: 10px;">
                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -217,13 +217,13 @@
               </div>
             </a>
            </div>
-           <div style="margin-top: 30px;">
+           <div style="margin-top: 30px;" class="show">
             <h1 class="heading1">TECH</h1>
             <h1 class="heading2">SKILLS</h1>
            </div>
-           <div class="skills-container">
+           <div class="skills-container" class="show">
   
-  <div class="skill" title="HTML">
+  <div class="skill" title="HTML" >
     <img src="https://skillicons.dev/icons?i=html" />
   </div>
 
@@ -324,46 +324,55 @@
   </div>
 
 </div>
-           <div style="margin-top: 40px;">
+           <div style="margin-top: 40px;" class="show" id="contact-section">
             <h1 class="heading1">LET'S WORK</h1>
             <h1 class="heading2">TOGETHER</h1>
            </div>
-           <div style="width: 80%; display: flex; flex-direction: column; margin-top: 20px; gap:10px;">
-               
-                <div class="name-mail-div">
-                <div class="feild">
-                   <div>NAME</div>
-                   <input type="text" placeholder="your name">
-                </div> 
-                <div class="feild">
-                   <div>EMAIL</div>
-                   <input type="text" placeholder="your @mail.com">
-                </div>
-                </div>
-               
-               <div class="feild">
-                <div>
-                  BUDGET
-                </div>
-                <select id="budget">
-                 <option selected disabled>Select Budget</option>
-                 <option value="<3K">Less than 3K</option>
-                 <option value="3K-5K">3K - 5K</option>
-                 <option value=">5K">More than 5K</option>
-                </select>
-               </div>
-               <div class="feild">
-                   <div>DESCRIPTION</div>
-                   <input type="text" placeholder="description">
-                </div> 
-               
-               <div id="submit-div">SUBMIT</div>
-           </div>
+           <div class="connect" class="show">
+
+    <div class="name-mail-div">
+
+        <div class="feild">
+            <div>NAME</div>
+            <input id="name" type="text" placeholder="your name">
+        </div>
+
+        <div class="feild">
+            <div>EMAIL</div>
+            <input id="email" type="email" placeholder="your@mail.com">
+        </div>
+
+    </div>
+
+    <div class="feild">
+        <div>BUDGET</div>
+
+        <select id="budget">
+            <option selected disabled>Select Budget</option>
+            <option value="<3K">Less than 3K</option>
+            <option value="3K-5K">3K - 5K</option>
+            <option value=">5K">More than 5K</option>
+        </select>
+    </div>
+
+    <div class="feild">
+        <div>DESCRIPTION</div>
+        <input id="description" type="text" placeholder="description">
+    </div>
+
+    <div id="submit-div">SUBMIT</div>
+
+
+</div>
         </div>
         
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+    emailjs.init("DcJOh8WGF_JuvEqt3");
+</script>
     <script src="script.js"></script>
+    
 </body>
 
 </html>
